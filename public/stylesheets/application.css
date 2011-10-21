@@ -684,3 +684,40 @@ h2 img { vertical-align:middle; }
   #main { background: #fff; }
   #content { width: 99%; margin: 0; padding: 0; border: 0; background: #fff; overflow: visible !important;}
 }
+
+/* 1 pixel white line between rows */
+tr.issue    { border: 1px solid white; }
+
+/* Optional 1 pixel white line between columns */
+/* tr.issue td { border: 1px solid white; } */
+
+/* use MantisBT style coloring by status */
+tr.status-1 { background: #fcc; } /* new */
+tr.status-2 { background: #cdf; } /* assigned */
+tr.status-3 { background: #fd6; } /* rejected */
+tr.status-4 { background: #fdf; } /* feedback */
+tr.status-5 { background: #99f; } /* project */
+tr.status-6 { background: #dfd; } /* closed */
+tr.status-7 { background: #eee; } /* resolved */
+
+td.status-1 { background: #fcc; } /* new */
+td.status-2 { background: #cdf; } /* assigned */
+td.status-3 { background: #fd6; } /* rejected */
+td.status-4 { background: #fdf; } /* feedback */
+td.status-5 { background: #99f; } /* project */
+td.status-6 { background: #dfd; } /* closed */
+td.status-7 { background: #eee; } /* resolved */
+
+/* if you only want the status column highlighted, use these instead */
+/*
+tr.status-1 td.status { background: #fcc; }
+tr.status-2 td.status { background: #cdf; }
+tr.status-3 td.status { background: #dfd; }
+tr.status-4 td.status { background: #fdf; }
+tr.status-5 td.status { background: #eee; }
+tr.status-6 td.status { background: #fd6; }
+*/
+
+.floatright {
+  float: right;
+}
