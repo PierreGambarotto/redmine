@@ -24,7 +24,7 @@
 </tr>
 <tr>
     <td class="priority"><b><%=l(:field_priority)%>:</b></td><td class="priority"><%= @issue.priority.name %></td>
-    <td class="due-date"><b></b></td><td class="due-date"></td>
+    <td class="due-date"><b><%=l(:field_due_date)%>:</b></td><td class="due-date"><%= format_date(@issue.due_date) %></td>
 </tr>
 <tr>
     <td class="assigned-to"><b><%=l(:field_assigned_to)%>:</b></td><td><%= avatar(@issue.assigned_to, :size => "14") %><%= @issue.assigned_to ? link_to_user(@issue.assigned_to) : "-" %></td>
